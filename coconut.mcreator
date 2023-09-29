@@ -1,0 +1,225 @@
+{
+  "mod_elements": [
+    {
+      "name": "Coconutmod",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconutmod",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CoconutPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coconut/procedures/CoconutPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Coconut",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coconut/item/CoconutItem.java",
+          "src/main/resources/assets/coconut/models/item/coconut.json"
+        ]
+      }
+    },
+    {
+      "name": "Coconutblock",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconutblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/coconut/blockstates/coconutblock.json",
+          "src/main/resources/assets/coconut/models/item/coconutblock.json",
+          "src/main/resources/assets/coconut/models/block/coconutblock.json",
+          "src/main/java/net/mcreator/coconut/block/CoconutblockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Spawn",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coconut/procedures/SpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoconutblockEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconutblock_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coconut/procedures/CoconutblockEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Removeblock",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "removeblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coconut/procedures/RemoveblockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoconutblockNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconutblock_neighbour_block_changes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coconut/procedures/CoconutblockNeighbourBlockChangesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "itemGroup.tabcoconutmod": "Coconut Mod",
+      "item.coconut.coconut": "Coconut",
+      "block.coconut.coconutblock": "Coconut",
+      "item_group.coconut.coconutmod": "Coconut Mod"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "coconut",
+    "modName": "Coconut",
+    "version": "1.0.0",
+    "author": "The_WereF0X",
+    "websiteURL": "https://discord.gg/eCAHRcTYc9",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": true,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.20.1",
+    "credits": "https://discord.gg/eCAHRcTYc9",
+    "modElementsPackage": "net.mcreator.coconut",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}
