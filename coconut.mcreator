@@ -207,10 +207,6 @@
           {
             "name": "sourceentity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -250,11 +246,13 @@
     "modid": "coconut",
     "modName": "Coconut",
     "version": "1.0.0",
+    "description": "Coconuts",
     "author": "The_WereF0X",
     "websiteURL": "https://discord.gg/eCAHRcTYc9",
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": true,
+    "modPicture": "unnamed_4",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

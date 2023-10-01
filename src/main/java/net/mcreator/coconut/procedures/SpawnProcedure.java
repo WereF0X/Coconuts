@@ -79,7 +79,7 @@ public class SpawnProcedure {
 				}
 			}
 		}
-		if (blockstate.getBlock() == Blocks.FLOWERING_AZALEA_LEAVES) {
+		if (blockstate.getBlock() == Blocks.BIRCH_LEAVES) {
 			if (Math.random() < 0.35) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = CoconutModEntities.COCONUTENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);

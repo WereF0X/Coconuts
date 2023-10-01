@@ -8,7 +8,9 @@ version="1.0.0"
 displayName="Coconut"
 credits="https://discord.gg/eCAHRcTYc9"
 displayURL="https://discord.gg/eCAHRcTYc9"
+logoFile="logo.png"
 authors="The_WereF0X"
+description="Coconuts"
 
 [[dependencies.coconut]]
     modId="minecraft"
