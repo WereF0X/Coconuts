@@ -30,7 +30,7 @@ public class SpawnProcedure {
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if (blockstate.getBlock() == Blocks.OAK_LEAVES) {
-			if (Math.random() < 0.5) {
+			if (Math.random() < 0.35) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = CoconutModEntities.COCONUTENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {
@@ -50,7 +50,7 @@ public class SpawnProcedure {
 			}
 		}
 		if (blockstate.getBlock() == Blocks.ACACIA_LEAVES) {
-			if (Math.random() < 0.5) {
+			if (Math.random() < 0.35) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = CoconutModEntities.COCONUTENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {
@@ -60,7 +60,7 @@ public class SpawnProcedure {
 			}
 		}
 		if (blockstate.getBlock() == Blocks.MANGROVE_LEAVES) {
-			if (Math.random() < 0.5) {
+			if (Math.random() < 0.35) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = CoconutModEntities.COCONUTENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {
@@ -70,7 +70,7 @@ public class SpawnProcedure {
 			}
 		}
 		if (blockstate.getBlock() == Blocks.CHERRY_LEAVES) {
-			if (Math.random() < 0.5) {
+			if (Math.random() < 0.35) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = CoconutModEntities.COCONUTENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {
@@ -79,8 +79,8 @@ public class SpawnProcedure {
 				}
 			}
 		}
-		if (blockstate.getBlock() == Blocks.BIRCH_LEAVES) {
-			if (Math.random() < 0.5) {
+		if (blockstate.getBlock() == Blocks.FLOWERING_AZALEA_LEAVES) {
+			if (Math.random() < 0.35) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = CoconutModEntities.COCONUTENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {

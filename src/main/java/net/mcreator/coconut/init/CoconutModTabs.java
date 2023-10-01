@@ -20,7 +20,6 @@ public class CoconutModTabs {
 	public static final RegistryObject<CreativeModeTab> COCONUTMOD = REGISTRY.register("coconutmod",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.coconut.coconutmod")).icon(() -> new ItemStack(Blocks.AIR)).displayItems((parameters, tabData) -> {
 				tabData.accept(CoconutModItems.COCONUT.get());
-				tabData.accept(CoconutModBlocks.COCONUTBLOCK.get().asItem());
 			})
 
 					.build());

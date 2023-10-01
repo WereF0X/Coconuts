@@ -22,7 +22,7 @@ import net.mcreator.coconut.CoconutMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CoconutModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, CoconutMod.MODID);
-	public static final RegistryObject<EntityType<CoconutentityEntity>> COCONUTENTITY = register("coconutentity", EntityType.Builder.<CoconutentityEntity>of(CoconutentityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+	public static final RegistryObject<EntityType<CoconutentityEntity>> COCONUTENTITY = register("coconutentity", EntityType.Builder.<CoconutentityEntity>of(CoconutentityEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CoconutentityEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
