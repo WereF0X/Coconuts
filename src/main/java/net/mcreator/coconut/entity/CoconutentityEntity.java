@@ -108,7 +108,7 @@ public class CoconutentityEntity extends PathfinderMob {
 	@Override
 	public void playerTouch(Player sourceentity) {
 		super.playerTouch(sourceentity);
-		CoconutentityPlayerCollidesWithThisEntityProcedure.execute(this, sourceentity);
+		CoconutentityPlayerCollidesWithThisEntityProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this, sourceentity);
 	}
 
 	public static void init() {
