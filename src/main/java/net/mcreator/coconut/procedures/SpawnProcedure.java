@@ -8,11 +8,12 @@ import net.minecraftforge.event.level.BlockEvent;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.item.FallingBlockEntity;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.coconut.init.CoconutModBlocks;
+import net.mcreator.coconut.init.CoconutModEntities;
 
 import javax.annotation.Nullable;
 
@@ -29,8 +30,64 @@ public class SpawnProcedure {
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if (blockstate.getBlock() == Blocks.OAK_LEAVES) {
-			if (world instanceof ServerLevel _level)
-				FallingBlockEntity.fall(_level, BlockPos.containing(x, y, z), CoconutModBlocks.COCONUTBLOCK.get().defaultBlockState());
+			if (Math.random() < 0.5) {
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CoconutModEntities.COCONUTENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+			}
+		}
+		if (blockstate.getBlock() == Blocks.JUNGLE_LEAVES) {
+			if (Math.random() < 0.5) {
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CoconutModEntities.COCONUTENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+			}
+		}
+		if (blockstate.getBlock() == Blocks.ACACIA_LEAVES) {
+			if (Math.random() < 0.5) {
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CoconutModEntities.COCONUTENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+			}
+		}
+		if (blockstate.getBlock() == Blocks.MANGROVE_LEAVES) {
+			if (Math.random() < 0.5) {
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CoconutModEntities.COCONUTENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+			}
+		}
+		if (blockstate.getBlock() == Blocks.CHERRY_LEAVES) {
+			if (Math.random() < 0.5) {
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CoconutModEntities.COCONUTENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+			}
+		}
+		if (blockstate.getBlock() == Blocks.BIRCH_LEAVES) {
+			if (Math.random() < 0.5) {
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CoconutModEntities.COCONUTENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+			}
 		}
 	}
 }

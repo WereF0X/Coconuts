@@ -187,12 +187,55 @@
           }
         ]
       }
+    },
+    {
+      "name": "CoconutentityPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconutentity_player_collides_with_this_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coconut/procedures/CoconutentityPlayerCollidesWithThisEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Coconutentity",
+      "type": "livingentity",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconutentity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/coconut/client/renderer/CoconutentityRenderer.java",
+          "src/main/resources/data/coconut/forge/biome_modifier/coconutentity_biome_modifier.json",
+          "src/main/java/net/mcreator/coconut/entity/CoconutentityEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "entity.coconut.coconutentity": "Coconut",
       "itemGroup.tabcoconutmod": "Coconut Mod",
       "item.coconut.coconut": "Coconut",
       "block.coconut.coconutblock": "Coconut",

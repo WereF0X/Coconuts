@@ -31,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.coconut.init.CoconutModTabs;
 import net.mcreator.coconut.init.CoconutModItems;
+import net.mcreator.coconut.init.CoconutModEntities;
 import net.mcreator.coconut.init.CoconutModBlocks;
 
 import java.util.function.Supplier;
@@ -54,6 +55,7 @@ public class CoconutMod {
 		CoconutModBlocks.REGISTRY.register(bus);
 
 		CoconutModItems.REGISTRY.register(bus);
+		CoconutModEntities.REGISTRY.register(bus);
 
 		CoconutModTabs.REGISTRY.register(bus);
 
