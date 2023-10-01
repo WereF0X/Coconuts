@@ -5,7 +5,7 @@
     "mobName": "Coconut",
     "mobLabel": "",
     "mobModelName": "Modelcoconut",
-    "mobModelTexture": "texture.png",
+    "mobModelTexture": "coconut.png",
     "mobModelGlowTexture": "",
     "solidBoundingBox": {
       "fixedValue": false

@@ -15,6 +15,6 @@ public class CoconutentityRenderer extends MobRenderer<CoconutentityEntity, Mode
 
 	@Override
 	public ResourceLocation getTextureLocation(CoconutentityEntity entity) {
-		return new ResourceLocation("coconut:textures/entities/texture.png");
+		return new ResourceLocation("coconut:textures/entities/coconut.png");
 	}
 }
